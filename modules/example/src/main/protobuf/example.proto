@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package example;
+
+option java_package = "example";
+
+service ExampleService {
+  rpc getFoo(FooReq) returns (FooResp);
+}
+
+message FooReq {}
+message FooResp {}
